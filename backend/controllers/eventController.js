@@ -10,6 +10,7 @@ const createEvent = async (req, res) => {
       description,
       volunteersNeeded,
       numberOfVolunteers,
+      redirectionLink,
     } = req.body;
 
     // Create a new Event instance
@@ -21,6 +22,7 @@ const createEvent = async (req, res) => {
       description,
       volunteersNeeded,
       numberOfVolunteers,
+      redirectionLink
     });
 
     // Save the new event to the database
