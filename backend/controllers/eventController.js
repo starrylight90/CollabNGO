@@ -35,6 +35,19 @@ const createEvent = async (req, res) => {
   }
 };
 
+// Controller function to display all events
+const displayEvents = async (req, res) => {
+  try {
+    // Retrieve all events from the database
+    const events = await Event.find();
 
+    // Send the events as a JSON response with a status code of 200 (OK)
+    res.status(200).json(events);
+  } catch (error) {
+    console.error('Error fetching events:', error);
+    // Return an error response with a status code of 500 (Internal Server Error)
+    res.status(500).json({ message: 'Failed to fetch events', error: error.message });
+  }
+};
 
-export default createEvent;
+export { createEvent, displayEvents };
