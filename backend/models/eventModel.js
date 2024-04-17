@@ -29,6 +29,10 @@ const eventSchema = new mongoose.Schema({
   numberOfVolunteers: {
     type: Number,
     default: 0
+  },
+  redirectionLink:{
+    type: String,
+    required: true
   }
 }, {
   timestamps: true // Automatically add `createdAt` and `updatedAt` timestamps
