@@ -1,5 +1,3 @@
-Here is a suggested README for your project based on the problem statement you provided:
-
 ---
 
 # Collaborative NGO Event Management Platform
