@@ -141,7 +141,7 @@ export const HomePage = () => {
             <input
               type="text"
               name="image"
-              placeholder="Image URL"
+              placeholder="Image"
               value={eventDetails.image}
               onChange={handleInputChange}
               required

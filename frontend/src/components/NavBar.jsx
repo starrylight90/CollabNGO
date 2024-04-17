@@ -1,5 +1,5 @@
 import React from "react";
-
+import  Logo from "../Picture1.jpg"
 export const NavBar = () => {
   return (
 
@@ -14,12 +14,12 @@ export const NavBar = () => {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       {/* Navbar brand */}
       <a className="navbar-brand mt-2 mt-lg-0" href="#">
-        <img src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp" height={15} alt="MDB Logo" loading="lazy" />
+        <img src={Logo} height={40} alt="MDB Logo" loading="lazy" />
       </a>
       {/* Left links */}
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-        <li className="nav-item">
-          <a className="nav-link" href="#">Dashboard</a>
+        <li className="nav-item"><h3>
+          <a className="nav-link" href="#">CollabNGO</a></h3>
         </li>
        
       </ul>
