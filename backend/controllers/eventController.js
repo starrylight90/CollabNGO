@@ -39,7 +39,7 @@ const createEvent = async (req, res) => {
 const displayEvents = async (req, res) => {
     try {
       // Retrieve all events from the database
-      const events = await Event.find({}, '_id title date time image description volunteersNeeded numberOfVolunteers');
+      const events = await Event.find({}, '_id title date time image description volunteersNeeded numberOfVolunteers redirectionLink');
   
       // Send the events as a JSON response with a status code of 200 (OK)
       res.status(200).json(events);
